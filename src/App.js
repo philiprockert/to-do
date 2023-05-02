@@ -1,5 +1,6 @@
 import React from 'react';
 import { TodoCounter } from './TodoCounter';
+import { TodoSearch } from './TodoSearch';
 //import './App.css';
 const todos = [ 
 {text:"hacer trabajos", complited: false},
@@ -10,9 +11,8 @@ function App() {
   return (
     <React.Fragment>
       <TodoCounter/>
+      <TodoSearch/>
       
-      {/*<TodoSearch/>*/}
-      <input placeholder='cebolla' />
       {/*<TodoList>
         {todos.map(todo => (<Todoitem />))}
       </TodoList>*/}
