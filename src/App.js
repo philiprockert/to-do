@@ -4,6 +4,7 @@ import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { todos } from './TodoList';
 import { Todotem } from './Todotem';
+import { CreateButton } from './CreateButton';
 //import './App.css';
 
 function App() {
@@ -14,12 +15,7 @@ function App() {
       <TodoList>
         {todos.map(todo => ( <Todotem text= {todo.text}/> ))}
       </TodoList>
-      
-      {/*<CreateTodoButton />*/}
-      <button>+</button>
-
-
-
+      <CreateButton />
     </React.Fragment>
     
   );

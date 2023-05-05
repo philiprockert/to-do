@@ -1,6 +1,6 @@
 import React from "react";
 
-const h1 = <h1></h1>;
+
 function Todotem(props){
     return(
         <li>
