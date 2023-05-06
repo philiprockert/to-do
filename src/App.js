@@ -10,7 +10,7 @@ import { CreateButton } from './CreateButton';
 function App() {
   return (
     <React.Fragment>
-      <TodoCounter/>
+      <TodoCounter complited = {todos.filter(todo => todo.complited).length}total={todos.length} />
       <TodoSearch/>
       <TodoList>
         {todos.map(todo => ( <Todotem text= {todo.text}/> ))}
